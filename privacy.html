@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de Confidentialité - Secure Home</title>
+
+<style>
+:root {
+    --bg:#0f172a;
+    --card:#111c33;
+    --text:#e5e7eb;
+    --accent:#38bdf8;
+    --muted:#94a3b8;
+}
+
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+}
+
+header {
+    padding:40px 20px;
+    text-align:center;
+    background:linear-gradient(135deg, #0ea5e9, #1e293b);
+}
+
+header h1 {
+    margin:0;
+    font-size:2.2em;
+}
+
+header p {
+    color:var(--muted);
+}
+
+.container {
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+.card {
+    background:var(--card);
+    padding:20px;
+    margin:15px 0;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+h2 {
+    color:var(--accent);
+    margin-top:0;
+}
+
+a {
+    color:var(--accent);
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+.toc {
+    background:#0b1220;
+    padding:15px;
+    border-radius:10px;
+}
+
+.toc a {
+    display:block;
+    padding:5px 0;
+}
+
+footer {
+    text-align:center;
+    padding:30px;
+    color:var(--muted);
+    font-size:0.9em;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Secure Home</h1>
+    <p>Politique de Confidentialité / Privacy Policy</p>
+</header>
+
+<div class="container">
+
+<div class="card toc">
+<h2>Sommaire</h2>
+<a href="#intro">1. Présentation</a>
+<a href="#objet">2. Objet</a>
+<a href="#definitions">3. Définitions</a>
+<a href="#donnees">4. Données traitées</a>
+<a href="#securite">5. Sécurité</a>
+<a href="#rgpd">6. RGPD</a>
+<a href="#droits">7. Droits des utilisateurs</a>
+<a href="#contact">8. Contact</a>
+</div>
+
+<div class="card" id="intro">
+<h2>1. Présentation du projet</h2>
+<p>
+Secure Home est un système de domotique et de surveillance basé sur ESP32 et ESP32-CAM,
+intégrant des capteurs (laser, contact magnétique de porte) et une communication via Telegram.
+</p>
+<p>
+This system is designed for educational and personal security automation purposes.
+</p>
+</div>
+
+<div class="card" id="objet">
+<h2>2. Objet de la politique</h2>
+<p>
+Cette politique décrit la manière dont les données sont collectées, utilisées et protégées
+dans le cadre du fonctionnement du système Secure Home.
+</p>
+<p>
+This document explains how data is processed within the Secure Home ecosystem.
+</p>
+</div>
+
+<div class="card" id="definitions">
+<h2>3. Définitions</h2>
+<ul>
+<li><b>ESP32</b> : microcontrôleur Wi-Fi utilisé pour l’automatisation.</li>
+<li><b>ESP32-CAM</b> : module caméra pour capture d’images.</li>
+<li><b>Telegram</b> : service de messagerie utilisé pour les notifications.</li>
+<li><b>Données</b> : informations transmises par les capteurs.</li>
+</ul>
+</div>
+
+<div class="card" id="donnees">
+<h2>4. Données traitées</h2>
+
+<h3>Données collectées</h3>
+<ul>
+<li>État des capteurs (porte, laser)</li>
+<li>Images capturées par ESP32-CAM</li>
+<li>Logs techniques (connexion, erreurs)</li>
+</ul>
+
+<h3>Données non collectées</h3>
+<ul>
+<li>Identité personnelle des utilisateurs</li>
+<li>Données bancaires</li>
+<li>Localisation GPS précise</li>
+</ul>
+
+<h3>Finalité</h3>
+<p>
+Les données servent uniquement à la surveillance locale et aux notifications de sécurité.
+</p>
+</div>
+
+<div class="card" id="securite">
+<h2>5. Sécurité informatique</h2>
+<ul>
+<li>Communication via HTTPS/TLS (Telegram API)</li>
+<li>Protection du token Telegram</li>
+<li>Réseau Wi-Fi sécurisé recommandé (WPA2/WPA3)</li>
+<li>Accès limité aux dispositifs ESP32</li>
+</ul>
+
+<p>
+Les images et données ne sont pas stockées sur des serveurs externes autres que Telegram.
+</p>
+</div>
+
+<div class="card" id="rgpd">
+<h2>6. Base juridique (RGPD)</h2>
+<p>
+Le traitement des données repose sur l’intérêt légitime de sécurité et d’automatisation domestique.
+</p>
+<p>
+This project is compliant with GDPR principles where applicable.
+</p>
+</div>
+
+<div class="card" id="droits">
+<h2>7. Droits des utilisateurs</h2>
+<ul>
+<li>Droit d’accès aux données</li>
+<li>Droit de suppression</li>
+<li>Droit de limitation du traitement</li>
+</ul>
+</div>
+
+<div class="card" id="contact">
+<h2>8. Contact</h2>
+<p>
+GitHub : disponible dans le projet<br>
+Email : contact@securehome.local
+</p>
+</div>
+
+<div class="card">
+<h2>Clause finale</h2>
+<p>
+Ce projet est un système éducatif. Il ne constitue pas un dispositif de sécurité certifié
+et ne garantit pas une protection absolue contre les intrusions.
+</p>
+<p>
+This system is provided “as is” without warranty of full security effectiveness.
+</p>
+</div>
+
+</div>
+
+<footer>
+Secure Home © 2026 — Tous droits réservés
+</footer>
+
+</body>
+</html>
