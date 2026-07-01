@@ -3,84 +3,233 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Politique de Confidentialité - Secure Home</title>
+<title>Secure Home — Privacy Policy / Politique de Confidentialité</title>
 
 <style>
 :root {
-    --bg:#0f172a;
-    --card:#111c33;
+    --bg:#0a0e1a;
+    --card:#0f1729;
+    --card-border:#1e293b;
     --text:#e5e7eb;
     --accent:#38bdf8;
-    --muted:#94a3b8;
+    --gold:#c9a648;
+    --muted:#8b96a8;
+    --danger:#f87171;
 }
+
+* { box-sizing: border-box; }
 
 body {
     margin:0;
-    font-family: Arial, sans-serif;
-    background:var(--bg);
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background:
+        radial-gradient(circle at 50% 0%, #10192e 0%, var(--bg) 60%);
     color:var(--text);
-    line-height:1.6;
+    line-height:1.7;
 }
 
 header {
-    padding:40px 20px;
+    padding:60px 20px 40px;
     text-align:center;
-    background:linear-gradient(135deg, #0ea5e9, #1e293b);
+    background: linear-gradient(180deg, #0b1220 0%, #0a0e1a 100%);
+    border-bottom: 1px solid var(--card-border);
+    position: relative;
+}
+
+/* ==================== SCEAU OFFICIEL (SVG) ==================== */
+.seal-wrapper {
+    display:flex;
+    justify-content:center;
+    margin-bottom: 20px;
+}
+
+.seal {
+    width: 150px;
+    height: 150px;
+    filter: drop-shadow(0 0 15px rgba(56,189,248,0.25));
 }
 
 header h1 {
-    margin:0;
-    font-size:2.2em;
+    margin:10px 0 4px;
+    font-size:2.1em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-weight: 700;
+    color: var(--text);
 }
 
-header p {
+header .subtitle {
+    color: var(--gold);
+    letter-spacing: 4px;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-bottom: 12px;
+}
+
+header p.desc {
     color:var(--muted);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 0.95em;
+}
+
+.classification-bar {
+    margin: 20px auto 0;
+    max-width: 500px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 0.75em;
+    padding: 6px 12px;
+    text-transform: uppercase;
 }
 
 .container {
-    max-width:1000px;
+    max-width:900px;
     margin:auto;
-    padding:20px;
+    padding:30px 20px 60px;
 }
 
 .card {
     background:var(--card);
-    padding:20px;
-    margin:15px 0;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    border: 1px solid var(--card-border);
+    padding:26px 28px;
+    margin:18px 0;
+    border-radius:6px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.35);
 }
 
-h2 {
+.card h2 {
     color:var(--accent);
     margin-top:0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 1.25em;
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 10px;
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
-a {
-    color:var(--accent);
-    text-decoration:none;
+.card h2 .num {
+    color: var(--gold);
+    font-size: 0.8em;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
 }
 
-a:hover {
-    text-decoration:underline;
+.card h3 {
+    color: var(--gold);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 1em;
+    margin-bottom: 6px;
 }
+
+.en {
+    color: var(--muted);
+    font-style: italic;
+    font-size: 0.92em;
+    border-left: 2px solid var(--card-border);
+    padding-left: 14px;
+    margin-top: 6px;
+}
+
+a { color:var(--accent); text-decoration:none; }
+a:hover { text-decoration:underline; }
 
 .toc {
     background:#0b1220;
-    padding:15px;
-    border-radius:10px;
+    padding:20px 24px;
+    border-radius:6px;
+    border: 1px solid var(--card-border);
+}
+
+.toc h2 { font-family:'Trebuchet MS', Arial, sans-serif; color: var(--gold); border:none; }
+
+.toc-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 20px;
 }
 
 .toc a {
     display:block;
-    padding:5px 0;
+    padding:6px 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 0.92em;
+    border-bottom: 1px dotted var(--card-border);
 }
+
+table {
+    width:100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 0.9em;
+}
+
+th, td {
+    border: 1px solid var(--card-border);
+    padding: 10px 12px;
+    text-align: left;
+}
+
+th {
+    background: #0b1220;
+    color: var(--gold);
+}
+
+ul, ol { padding-left: 22px; }
+li { margin-bottom: 6px; }
+
+.badge {
+    display:inline-block;
+    background: rgba(56,189,248,0.12);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 0.72em;
+    padding: 2px 10px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.warning-box {
+    border: 1px solid var(--danger);
+    background: rgba(248,113,113,0.06);
+    padding: 14px 18px;
+    border-radius: 6px;
+    margin-top: 14px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 0.9em;
+}
+
+.warning-box strong { color: var(--danger); }
 
 footer {
     text-align:center;
-    padding:30px;
+    padding:40px 20px;
     color:var(--muted);
-    font-size:0.9em;
+    font-size:0.85em;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    border-top: 1px solid var(--card-border);
+}
+
+footer .seal-mini {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 12px;
+    opacity: 0.5;
 }
 </style>
 </head>
@@ -88,135 +237,310 @@ footer {
 <body>
 
 <header>
+    <div class="seal-wrapper">
+        <!-- Sceau officiel original (SVG maison, style "agence") -->
+        <svg class="seal" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="96" fill="none" stroke="#c9a648" stroke-width="2"/>
+            <circle cx="100" cy="100" r="88" fill="none" stroke="#c9a648" stroke-width="1"/>
+            <circle cx="100" cy="100" r="70" fill="#0f1729" stroke="#38bdf8" stroke-width="1"/>
+
+            <!-- Texte circulaire haut -->
+            <defs>
+                <path id="circleTop" d="M 30,100 A 70,70 0 0 1 170,100" fill="none"/>
+                <path id="circleBottom" d="M 170,100 A 70,70 0 0 1 30,100" fill="none"/>
+            </defs>
+            <text font-family="Trebuchet MS, sans-serif" font-size="10" fill="#c9a648" letter-spacing="3">
+                <textPath href="#circleTop" startOffset="50%" text-anchor="middle">SECURE HOME AGENCY</textPath>
+            </text>
+            <text font-family="Trebuchet MS, sans-serif" font-size="9" fill="#8b96a8" letter-spacing="3">
+                <textPath href="#circleBottom" startOffset="50%" text-anchor="middle">EST. 2026 — ROUBAIX DIV.</textPath>
+            </text>
+
+            <!-- Aigle stylisé (silhouette géométrique originale) -->
+            <g transform="translate(100,102)" fill="#e5e7eb">
+                <path d="M0,-28 L6,-14 L28,-10 L10,-2 L20,14 L4,4 L0,20 L-4,4 L-20,14 L-10,-2 L-28,-10 L-6,-14 Z" fill="#38bdf8" opacity="0.9"/>
+                <path d="M0,-6 C -14,-10 -30,-2 -34,10 C -24,6 -14,6 -8,10 C -6,4 -2,0 0,0 C 2,0 6,4 8,10 C 14,6 24,6 34,10 C 30,-2 14,-10 0,-6 Z" fill="#e5e7eb"/>
+                <circle cx="0" cy="0" r="4" fill="#c9a648"/>
+            </g>
+
+            <!-- Étoiles -->
+            <g fill="#c9a648">
+                <circle cx="100" cy="42" r="1.6"/>
+                <circle cx="130" cy="52" r="1.6"/>
+                <circle cx="70" cy="52" r="1.6"/>
+                <circle cx="148" cy="80" r="1.6"/>
+                <circle cx="52" cy="80" r="1.6"/>
+            </g>
+        </svg>
+    </div>
+
+    <div class="subtitle">Confidential Systems Division</div>
     <h1>Secure Home</h1>
-    <p>Politique de Confidentialité / Privacy Policy</p>
+    <p class="desc">Politique de Confidentialité &amp; Data Protection Charter</p>
+
+    <div class="classification-bar">Document Public — Classification : Non Sensible</div>
 </header>
 
 <div class="container">
 
 <div class="card toc">
-<h2>Sommaire</h2>
-<a href="#intro">1. Présentation</a>
-<a href="#objet">2. Objet</a>
+<h2>Sommaire / Table of Contents</h2>
+<div class="toc-grid">
+<a href="#intro">1. Présentation du projet</a>
+<a href="#objet">2. Objet de la politique</a>
 <a href="#definitions">3. Définitions</a>
 <a href="#donnees">4. Données traitées</a>
-<a href="#securite">5. Sécurité</a>
-<a href="#rgpd">6. RGPD</a>
-<a href="#droits">7. Droits des utilisateurs</a>
-<a href="#contact">8. Contact</a>
+<a href="#collecte">5. Modalités de collecte</a>
+<a href="#conservation">6. Durée de conservation</a>
+<a href="#securite">7. Sécurité informatique</a>
+<a href="#cookies">8. Cookies &amp; Traceurs</a>
+<a href="#partage">9. Partage des données</a>
+<a href="#transfert">10. Transferts internationaux</a>
+<a href="#rgpd">11. Base juridique (RGPD)</a>
+<a href="#droits">12. Droits des utilisateurs</a>
+<a href="#mineurs">13. Protection des mineurs</a>
+<a href="#incident">14. Gestion des incidents</a>
+<a href="#modifications">15. Modifications de la politique</a>
+<a href="#contact">16. Contact &amp; DPO</a>
+</div>
 </div>
 
 <div class="card" id="intro">
-<h2>1. Présentation du projet</h2>
+<h2><span class="num">1</span>Présentation du projet</h2>
+<span class="badge">System Overview</span>
 <p>
-Secure Home est un système de domotique et de surveillance basé sur ESP32 et ESP32-CAM,
-intégrant des capteurs (laser, contact magnétique de porte) et une communication via Telegram.
+Secure Home est un système de domotique et de surveillance personnelle basé sur des microcontrôleurs ESP32 et ESP32-CAM, intégrant des capteurs physiques (détecteur de porte magnétique MC-38, module laser d'alerte KY-008) et un système de notification en temps réel via l'API Telegram Bot.
 </p>
 <p>
-This system is designed for educational and personal security automation purposes.
+Ce projet a été conçu et développé à titre personnel et éducatif, dans le cadre d'un apprentissage autodidacte en électronique embarquée, développement C++/Arduino et cybersécurité appliquée.
+</p>
+<p class="en">
+Secure Home is a personal home automation and surveillance system built on ESP32 and ESP32-CAM microcontrollers, integrating physical sensors (MC-38 magnetic door contact, KY-008 laser alert module) and a real-time notification system via the Telegram Bot API. This project was designed and developed for personal and educational purposes, as part of self-taught learning in embedded electronics, C++/Arduino development, and applied cybersecurity.
 </p>
 </div>
 
 <div class="card" id="objet">
-<h2>2. Objet de la politique</h2>
+<h2><span class="num">2</span>Objet de la politique</h2>
 <p>
-Cette politique décrit la manière dont les données sont collectées, utilisées et protégées
-dans le cadre du fonctionnement du système Secure Home.
+La présente politique de confidentialité a pour objet d'informer les utilisateurs, de manière claire, transparente et loyale, sur la nature des données traitées dans le cadre du fonctionnement du bot Telegram Secure Home, les finalités de ce traitement, les mesures de sécurité mises en œuvre, ainsi que les droits dont ils disposent conformément à la réglementation applicable, notamment le Règlement Général sur la Protection des Données (RGPD — UE 2016/679).
 </p>
-<p>
-This document explains how data is processed within the Secure Home ecosystem.
+<p class="en">
+This privacy policy aims to inform users, in a clear, transparent and fair manner, about the nature of the data processed within the operation of the Secure Home Telegram bot, the purposes of such processing, the security measures implemented, and the rights available to users under applicable regulations, in particular the General Data Protection Regulation (GDPR — EU 2016/679).
 </p>
 </div>
 
 <div class="card" id="definitions">
-<h2>3. Définitions</h2>
-<ul>
-<li><b>ESP32</b> : microcontrôleur Wi-Fi utilisé pour l’automatisation.</li>
-<li><b>ESP32-CAM</b> : module caméra pour capture d’images.</li>
-<li><b>Telegram</b> : service de messagerie utilisé pour les notifications.</li>
-<li><b>Données</b> : informations transmises par les capteurs.</li>
-</ul>
+<h2><span class="num">3</span>Définitions</h2>
+<table>
+<tr><th>Terme</th><th>Définition</th></tr>
+<tr><td>ESP32</td><td>Microcontrôleur Wi-Fi/Bluetooth utilisé comme unité de traitement principale du système d'automatisation.</td></tr>
+<tr><td>ESP32-CAM</td><td>Variante du module ESP32 intégrant un capteur photographique, utilisée pour la capture d'images lors d'un déclenchement d'alerte.</td></tr>
+<tr><td>Bot Telegram</td><td>Application logicielle interagissant avec l'API Telegram pour l'envoi automatisé de notifications et de médias.</td></tr>
+<tr><td>Chat ID</td><td>Identifiant numérique unique attribué par Telegram à une conversation, utilisé pour cibler l'envoi des notifications.</td></tr>
+<tr><td>Token API</td><td>Clé secrète d'authentification permettant au système de communiquer avec les serveurs Telegram au nom du bot.</td></tr>
+<tr><td>Donnée à caractère personnel</td><td>Toute information se rapportant à une personne physique identifiée ou identifiable, au sens de l'article 4 du RGPD.</td></tr>
+</table>
 </div>
 
 <div class="card" id="donnees">
-<h2>4. Données traitées</h2>
+<h2><span class="num">4</span>Données traitées</h2>
 
-<h3>Données collectées</h3>
+<h3>4.1 — Données collectées</h3>
 <ul>
-<li>État des capteurs (porte, laser)</li>
-<li>Images capturées par ESP32-CAM</li>
-<li>Logs techniques (connexion, erreurs)</li>
+<li>État binaire des capteurs (porte ouverte/fermée, laser actif/inactif)</li>
+<li>Images capturées par le module ESP32-CAM lors du déclenchement d'une alerte</li>
+<li>Horodatage de l'événement (date et heure de la détection)</li>
+<li>Niveau du signal Wi-Fi de la carte au moment de l'alerte (à des fins de diagnostic)</li>
+<li>Logs techniques : historique de connexion Wi-Fi, erreurs système, échecs d'envoi HTTP</li>
+<li>Chat ID Telegram du destinataire des notifications (donnée strictement nécessaire au fonctionnement)</li>
 </ul>
 
-<h3>Données non collectées</h3>
+<h3>4.2 — Données explicitement non collectées</h3>
 <ul>
-<li>Identité personnelle des utilisateurs</li>
-<li>Données bancaires</li>
-<li>Localisation GPS précise</li>
+<li>Identité civile de l'utilisateur (nom, prénom, adresse postale)</li>
+<li>Données bancaires ou de paiement, sous quelque forme que ce soit</li>
+<li>Données de géolocalisation GPS précise</li>
+<li>Données biométriques ou de reconnaissance faciale</li>
+<li>Contenu des messages personnels échangés en dehors du canal du bot</li>
 </ul>
 
-<h3>Finalité</h3>
+<h3>4.3 — Finalité du traitement</h3>
 <p>
-Les données servent uniquement à la surveillance locale et aux notifications de sécurité.
+L'ensemble des données collectées sert exclusivement à assurer la fonction de surveillance locale et de notification de sécurité pour laquelle le système a été conçu. Aucune donnée n'est exploitée à des fins commerciales, publicitaires, statistiques externes ou de profilage.
+</p>
+<p class="en">
+All collected data is used exclusively to fulfill the local monitoring and security notification function for which the system was designed. No data is used for commercial, advertising, external statistical, or profiling purposes.
+</p>
+</div>
+
+<div class="card" id="collecte">
+<h2><span class="num">5</span>Modalités de collecte</h2>
+<p>
+La collecte des données s'effectue exclusivement de manière automatisée, via les capteurs physiques connectés au microcontrôleur ESP32-CAM. Aucune collecte manuelle, aucun formulaire, aucun tracking comportemental n'est mis en œuvre. Le déclenchement de la capture d'image et de l'envoi de notification est conditionné à l'activation physique du système via l'interrupteur à bascule matériel.
+</p>
+<p class="en">
+Data collection is performed exclusively through automated means, via the physical sensors connected to the ESP32-CAM microcontroller. No manual collection, form, or behavioral tracking is implemented. Image capture and notification triggering are conditioned on the physical activation of the system via the hardware toggle switch.
+</p>
+</div>
+
+<div class="card" id="conservation">
+<h2><span class="num">6</span>Durée de conservation</h2>
+<table>
+<tr><th>Type de donnée</th><th>Durée de conservation</th><th>Localisation</th></tr>
+<tr><td>Images capturées</td><td>Conservées dans l'historique de conversation Telegram, jusqu'à suppression manuelle par l'utilisateur</td><td>Serveurs Telegram</td></tr>
+<tr><td>Logs techniques (console série)</td><td>Non persistants — effacés à chaque redémarrage du microcontrôleur</td><td>Mémoire volatile de l'ESP32</td></tr>
+<tr><td>Chat ID</td><td>Stocké en dur dans le firmware, modifiable uniquement par re-flashage</td><td>Mémoire flash locale de l'ESP32</td></tr>
+</table>
+<p>
+Le système ne dispose d'aucune base de données distante ni d'aucun stockage cloud tiers. La totalité de la logique de conservation repose sur l'infrastructure Telegram elle-même pour les médias, et sur la mémoire locale du microcontrôleur pour la configuration.
 </p>
 </div>
 
 <div class="card" id="securite">
-<h2>5. Sécurité informatique</h2>
+<h2><span class="num">7</span>Sécurité informatique</h2>
+<span class="badge">Security Measures</span>
 <ul>
-<li>Communication via HTTPS/TLS (Telegram API)</li>
-<li>Protection du token Telegram</li>
-<li>Réseau Wi-Fi sécurisé recommandé (WPA2/WPA3)</li>
-<li>Accès limité aux dispositifs ESP32</li>
+<li>Chiffrement des communications via HTTPS/TLS pour tous les échanges avec l'API Telegram</li>
+<li>Le token d'authentification du bot n'est jamais transmis en clair sur un canal non chiffré</li>
+<li>Recommandation forte d'utiliser un réseau Wi-Fi domestique sécurisé en WPA2 ou WPA3</li>
+<li>Isolation physique du système : aucun port d'administration distant n'est exposé sur Internet</li>
+<li>Accès au firmware limité à une connexion physique filaire (upload via USB uniquement)</li>
 </ul>
-
 <p>
-Les images et données ne sont pas stockées sur des serveurs externes autres que Telegram.
+Les images et données transmises ne sont stockées sur aucun serveur externe autre que l'infrastructure Telegram, elle-même soumise à sa propre politique de confidentialité disponible sur telegram.org.
+</p>
+
+<div class="warning-box">
+<strong>Limitation de responsabilité :</strong> comme tout système auto-hébergé reposant sur du matériel grand public, Secure Home ne peut garantir une sécurité absolue contre des attaques sophistiquées (interception radio, compromission physique du matériel, faille zero-day sur l'infrastructure Telegram). L'utilisateur reste seul responsable de la sécurisation de son réseau Wi-Fi domestique.
+</div>
+</div>
+
+<div class="card" id="cookies">
+<h2><span class="num">8</span>Cookies &amp; Traceurs</h2>
+<p>
+Le système Secure Home, fonctionnant exclusivement via microcontrôleur et API Bot Telegram, n'intègre par nature aucun mécanisme de cookie, de traceur publicitaire, de pixel invisible ou de fingerprinting. Cette section est incluse à titre de transparence complète, bien que non applicable techniquement au présent projet.
+</p>
+<p class="en">
+The Secure Home system, operating exclusively through a microcontroller and the Telegram Bot API, does not by nature include any cookie mechanism, advertising tracker, invisible pixel, or fingerprinting technique. This section is included for full transparency, although not technically applicable to this project.
+</p>
+</div>
+
+<div class="card" id="partage">
+<h2><span class="num">9</span>Partage des données</h2>
+<p>
+Aucune donnée collectée par le système n'est vendue, louée, échangée ou communiquée à un tiers à des fins commerciales. Le seul destinataire technique des données est l'infrastructure Telegram, strictement nécessaire à l'acheminement des notifications vers le Chat ID configuré.
+</p>
+<p>
+Aucune intégration avec des services d'analytics tiers (Google Analytics, Meta Pixel, ou équivalents) n'est présente dans ce système.
+</p>
+</div>
+
+<div class="card" id="transfert">
+<h2><span class="num">10</span>Transferts internationaux</h2>
+<p>
+Dans la mesure où Telegram opère une infrastructure de serveurs distribuée internationalement, les images et notifications peuvent transiter par des serveurs situés hors de l'Union Européenne. Ce transfert est effectué sous la responsabilité et selon les garanties propres à Telegram Messenger Inc., conformément à sa politique de confidentialité publique.
+</p>
+<p class="en">
+As Telegram operates an internationally distributed server infrastructure, images and notifications may transit through servers located outside the European Union. This transfer is carried out under the responsibility and safeguards of Telegram Messenger Inc., in accordance with its publicly available privacy policy.
 </p>
 </div>
 
 <div class="card" id="rgpd">
-<h2>6. Base juridique (RGPD)</h2>
+<h2><span class="num">11</span>Base juridique (RGPD)</h2>
 <p>
-Le traitement des données repose sur l’intérêt légitime de sécurité et d’automatisation domestique.
+Le traitement des données mis en œuvre par Secure Home repose sur les bases juridiques suivantes, telles que définies par l'article 6 du RGPD :
 </p>
-<p>
-This project is compliant with GDPR principles where applicable.
+<ul>
+<li><b>Intérêt légitime</b> (art. 6.1.f) : sécurisation du domicile de l'utilisateur et prévention des intrusions</li>
+<li><b>Consentement implicite</b> (art. 6.1.a) : par l'activation volontaire du système via l'interrupteur physique</li>
+<li><b>Exécution d'une mesure précontractuelle/technique</b> : configuration initiale du Chat ID par l'utilisateur lui-même</li>
+</ul>
+<p class="en">
+The data processing implemented by Secure Home relies on the following legal bases as defined by Article 6 of the GDPR: legitimate interest (security of the user's home), implicit consent (voluntary activation via the physical switch), and technical necessity for initial configuration performed by the user.
 </p>
 </div>
 
 <div class="card" id="droits">
-<h2>7. Droits des utilisateurs</h2>
+<h2><span class="num">12</span>Droits des utilisateurs</h2>
+<p>Conformément aux articles 15 à 22 du RGPD, tout utilisateur dispose des droits suivants :</p>
 <ul>
-<li>Droit d’accès aux données</li>
-<li>Droit de suppression</li>
-<li>Droit de limitation du traitement</li>
+<li><b>Droit d'accès</b> — obtenir la confirmation que des données le concernant sont traitées</li>
+<li><b>Droit de rectification</b> — corriger toute donnée inexacte (ex : Chat ID erroné)</li>
+<li><b>Droit à l'effacement</b> — supprimer l'historique des notifications directement depuis l'application Telegram</li>
+<li><b>Droit à la limitation du traitement</b> — désactiver physiquement le système via l'interrupteur à bascule</li>
+<li><b>Droit d'opposition</b> — cesser l'utilisation du bot à tout moment, sans justification</li>
+<li><b>Droit à la portabilité</b> — exporter l'historique des médias directement via les fonctionnalités natives de Telegram</li>
 </ul>
+<p>
+Étant donné l'architecture 100% locale du système (absence de base de données centralisée hors Telegram), l'exercice de ces droits s'effectue en grande partie directement par l'utilisateur, sans intervention d'un tiers.
+</p>
+</div>
+
+<div class="card" id="mineurs">
+<h2><span class="num">13</span>Protection des mineurs</h2>
+<p>
+Ce système n'est pas destiné à collecter ni à traiter sciemment des données concernant des mineurs de manière autonome. Il s'agit d'un dispositif de sécurité domestique installé et administré par un adulte responsable du foyer, à des fins de protection de l'ensemble des occupants du domicile.
+</p>
+<p class="en">
+This system is not intended to knowingly collect or process data concerning minors autonomously. It is a home security device installed and administered by a responsible adult member of the household, for the protection of all household occupants.
+</p>
+</div>
+
+<div class="card" id="incident">
+<h2><span class="num">14</span>Gestion des incidents</h2>
+<p>
+En cas de compromission suspectée du token Telegram ou d'accès non autorisé au système, il est recommandé de :
+</p>
+<ol>
+<li>Révoquer immédiatement le token via BotFather (commande <code>/revoke</code>)</li>
+<li>Générer un nouveau token et reflasher le firmware avec les nouvelles informations d'authentification</li>
+<li>Vérifier l'intégrité physique du matériel et du réseau Wi-Fi domestique</li>
+<li>Changer le mot de passe du réseau Wi-Fi si une intrusion réseau est suspectée</li>
+</ol>
+</div>
+
+<div class="card" id="modifications">
+<h2><span class="num">15</span>Modifications de la politique</h2>
+<p>
+La présente politique de confidentialité peut être amenée à évoluer, notamment en cas d'ajout de nouvelles fonctionnalités au système (capteurs supplémentaires, intégrations tierces). Toute modification substantielle sera reflétée par une mise à jour de la date de publication en pied de page du présent document.
+</p>
+<p class="en">
+This privacy policy may evolve, particularly if new features are added to the system (additional sensors, third-party integrations). Any substantial modification will be reflected by an update to the publication date at the bottom of this document.
+</p>
 </div>
 
 <div class="card" id="contact">
-<h2>8. Contact</h2>
+<h2><span class="num">16</span>Contact &amp; DPO</h2>
 <p>
-GitHub : disponible dans le projet<br>
-Email : contact@securehome.local
+Pour toute question relative à la présente politique de confidentialité ou pour exercer l'un des droits mentionnés ci-dessus :
+</p>
+<p>
+GitHub : <a href="https://github.com/jocravidd-droid/secure-home" target="_blank">github.com/jocravidd-droid/secure-home</a><br>
+Email de contact : contact@securehome.local
 </p>
 </div>
 
 <div class="card">
 <h2>Clause finale</h2>
 <p>
-Ce projet est un système éducatif. Il ne constitue pas un dispositif de sécurité certifié
-et ne garantit pas une protection absolue contre les intrusions.
+Ce projet est un système développé à titre personnel et éducatif. Il ne constitue pas un dispositif de sécurité certifié par un organisme officiel et ne saurait garantir une protection absolue contre toute forme d'intrusion, de défaillance technique ou de tentative de compromission.
 </p>
-<p>
-This system is provided “as is” without warranty of full security effectiveness.
+<p class="en">
+This project is a system developed for personal and educational purposes. It does not constitute a security device certified by any official body and cannot guarantee absolute protection against any form of intrusion, technical failure, or compromise attempt.
 </p>
 </div>
 
 </div>
 
 <footer>
-Secure Home © 2026 — Tous droits réservés
+<svg class="seal-mini" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="96" fill="none" stroke="#c9a648" stroke-width="3"/>
+    <g transform="translate(100,100)" fill="#e5e7eb">
+        <path d="M0,-28 L6,-14 L28,-10 L10,-2 L20,14 L4,4 L0,20 L-4,4 L-20,14 L-10,-2 L-28,-10 L-6,-14 Z"/>
+    </g>
+</svg>
+Secure Home © 2026 — Tous droits réservés — All rights reserved<br>
+Document mis à jour le 01/07/2026
 </footer>
 
 </body>
