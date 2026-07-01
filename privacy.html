@@ -2,37 +2,190 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Politique de confidentialité - Secure Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité — Secure Home</title>
 <style>
-  body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
-  h1 { border-bottom: 2px solid #333; padding-bottom: 10px; }
-  h2 { margin-top: 30px; }
-  footer { margin-top: 50px; font-size: 0.9em; color: #666; }
+  body {
+    font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+    max-width: 760px;
+    margin: 50px auto;
+    padding: 0 24px;
+    line-height: 1.7;
+    color: #f0f0f0;
+    background: #000000;
+  }
+  h1 {
+    font-size: 1.8em;
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 12px;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    color: #aaaaaa;
+    font-size: 0.95em;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 1.25em;
+    color: #ffffff;
+    margin-top: 38px;
+    padding-top: 8px;
+    border-top: 1px solid #444;
+  }
+  h3 {
+    font-size: 1.05em;
+    color: #ffffff;
+    margin-top: 22px;
+  }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: #9ecbff; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.95em;
+  }
+  th, td {
+    border: 1px solid #444;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: #1a1a1a; color: #ffffff; }
+  td { background: #0d0d0d; }
+  .note {
+    background: #1a1a1a;
+    border-left: 4px solid #888;
+    padding: 12px 16px;
+    margin: 20px 0;
+    font-size: 0.95em;
+  }
+  footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 0.85em;
+    color: #999;
+  }
+  .logo-wrap {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .logo-wrap img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+  }
 </style>
 </head>
 <body>
 
-<h1>Politique de confidentialité — Secure Home</h1>
-<p><em>Dernière mise à jour : 1er juillet 2026</em></p>
+<div class="logo-wrap">
+  <img src="logo.png" alt="Secure Home Agency">
+</div>
 
-<h2>1. Présentation</h2>
-<p>Secure Home est un bot Telegram associé à un système de surveillance domestique personnel basé sur un module ESP32-CAM. Il notifie l'utilisateur autorisé en cas de détection d'intrusion (ouverture de porte ou coupure de faisceau laser) et permet un contrôle à distance limité du système.</p>
+<h1>Politique de confidentialité</h1>
+<p class="subtitle">Bot Telegram « Secure Home » — Version 2.0 — Dernière mise à jour : 1er juillet 2026</p>
 
-<h2>2. Données collectées</h2>
+<h2>1. Objet du document</h2>
+<p>La présente politique de confidentialité décrit la manière dont le système « Secure Home » (ci-après « le Système »), composé d'un module de surveillance ESP32-CAM et d'un bot Telegram associé (<code>@secureh_bot</code>), collecte, utilise et conserve les données lors de son fonctionnement. Elle est fournie conformément aux exigences de la plateforme Telegram pour l'enregistrement d'un bot, ainsi qu'à titre d'information sur les principes de protection des données applicables.</p>
+
+<h2>2. Nature et responsable du traitement</h2>
+<p>Le Système est un dispositif de sécurité domestique développé et exploité à des fins strictement personnelles par son unique utilisateur et propriétaire (ci-après « le Responsable »). Il n'est ni distribué, ni commercialisé, ni mis à disposition de tiers. Le Responsable est la seule personne physique traitant les données décrites ci-après, agissant en qualité de responsable du traitement au sens de l'article 4 du Règlement (UE) 2016/679 (RGPD).</p>
+
+<h2>3. Données collectées et traitées</h2>
+<table>
+  <tr><th>Catégorie de donnée</th><th>Description</th><th>Origine</th></tr>
+  <tr>
+    <td>Identifiant de conversation (chat_id)</td>
+    <td>Identifiant numérique unique attribué par Telegram à la conversation entre le Responsable et le bot. Utilisé exclusivement pour authentifier le destinataire légitime des alertes et des commandes.</td>
+    <td>Généré par Telegram</td>
+  </tr>
+  <tr>
+    <td>Photographies</td>
+    <td>Images capturées par le module ESP32-CAM lors d'une détection d'intrusion (ouverture de porte ou coupure de faisceau laser) ou à la demande explicite du Responsable (commande <code>/photo</code>).</td>
+    <td>Capteur du Système</td>
+  </tr>
+  <tr>
+    <td>Journal d'événements (historique)</td>
+    <td>Liste des 5 derniers événements survenus (intrusions, changements de mode, armements/désarmements), horodatés. Stockée uniquement en mémoire volatile du module.</td>
+    <td>Généré par le Système</td>
+  </tr>
+  <tr>
+    <td>Identifiants réseau et jeton d'authentification</td>
+    <td>Identifiant et mot de passe du réseau Wi-Fi domestique, ainsi que le jeton d'API du bot Telegram, nécessaires au fonctionnement du Système.</td>
+    <td>Configurés par le Responsable</td>
+  </tr>
+  <tr>
+    <td>Métadonnées techniques</td>
+    <td>Intensité du signal Wi-Fi (dBm), horodatage système, état d'armement.</td>
+    <td>Généré par le Système</td>
+  </tr>
+</table>
+
+<h2>4. Finalités du traitement</h2>
 <ul>
-  <li><strong>Identifiant de conversation (chat_id)</strong> : utilisé uniquement pour identifier le destinataire autorisé des alertes.</li>
-  <li><strong>Photos</strong> : capturées par le module ESP32-CAM au moment d'une alerte ou sur demande explicite (commande <code>/photo</code>), puis transmises via l'API officielle de Telegram.</li>
-  <li><strong>Historique d'événements</strong> : les 5 derniers événements (intrusions, changements de mode, armement/désarmement) sont conservés temporairement dans la mémoire volatile de l'appareil et sont effacés à chaque redémarrage. Aucun historique n'est stocké de façon permanente.</li>
+  <li>Détecter et notifier une intrusion potentielle au domicile du Responsable ;</li>
+  <li>Permettre l'administration à distance du Système (armement, désarmement, changement de mode de détection, mise en silence temporaire) exclusivement par le Responsable ;</li>
+  <li>Fournir un état de fonctionnement du Système sur demande (commande <code>/statut</code>) ;</li>
+  <li>Conserver une traçabilité de très court terme des événements pour faciliter le diagnostic.</li>
 </ul>
 
-<h2>3. Utilisation des commandes</h2>
-<p>Le bot accepte des commandes de contrôle à distance (armement, désarmement, changement de mode, silence temporaire, demande de photo). Ces commandes ne sont exécutées que si elles proviennent du chat_id enregistré par le propriétaire de l'appareil ; toute autre tentative est ignorée.</p>
+<h2>5. Base légale du traitement</h2>
+<p>Le traitement repose sur l'intérêt légitime du Responsable (article 6.1.f du RGPD) à assurer la sécurité de son domicile. Aucune donnée relative à un tiers identifié n'est collectée intentionnellement ; les photographies peuvent toutefois, de manière incidente, représenter une personne présente dans le champ de la caméra au moment d'une détection.</p>
 
-<h2>4. Partage des données</h2>
-<p>Aucune donnée n'est transmise à un tiers autre que l'infrastructure officielle de Telegram (api.telegram.org), nécessaire au fonctionnement du bot. Aucune donnée n'est vendue, ni utilisée à des fins publicitaires ou analytiques.</p>
+<h2>6. Destinataires des données</h2>
+<p>Les données ne sont transmises qu'à un seul destinataire technique : l'infrastructure de l'API Bot Telegram (<code>api.telegram.org</code>), exploitée par Telegram FZ-LLC, aux seules fins d'acheminement des messages et photographies vers le compte Telegram personnel du Responsable. Aucune donnée n'est vendue, louée, partagée à des fins commerciales, publicitaires ou statistiques, ni transmise à un autre tiers.</p>
 
-<h2>5. Conservation des données</h2>
-<p>Les identifiants de connexion Wi-Fi et le token du bot sont stockés localement sur le module ESP32-CAM et ne sont jamais transmis à un serveur externe. Les photos ne sont pas conservées sur l'appareil après envoi.</p>
+<h3>6.1 Transfert hors Union européenne</h3>
+<p>Telegram peut héberger et faire transiter les données par des serveurs situés hors de l'Union européenne. Le Responsable, en tant qu'unique utilisateur des services Telegram concernés, accepte ce traitement dans le cadre des conditions d'utilisation générales de Telegram, indépendantes de la présente politique.</p>
 
-<h2>6. Contact</h2>
-<p>Pour toute question conc
+<h2>7. Durée de conservation</h2>
+<ul>
+  <li><strong>Photographies :</strong> ne sont pas conservées sur le module ESP32-CAM après leur envoi ; elles ne subsistent que dans la conversation Telegram du Responsable, sous le contrôle exclusif de ce dernier.</li>
+  <li><strong>Journal d'événements :</strong> conservé uniquement en mémoire volatile (RAM) du module et intégralement effacé à chaque redémarrage ou coupure d'alimentation. Aucune persistance sur support de stockage n'est actuellement mise en œuvre.</li>
+  <li><strong>Identifiants réseau et jeton d'API :</strong> conservés localement dans la mémoire flash du module, tant que le Système reste en service.</li>
+</ul>
+
+<h2>8. Sécurité des données</h2>
+<p>Les mesures suivantes sont mises en œuvre pour limiter les risques associés au traitement :</p>
+<ul>
+  <li>Les échanges avec l'API Telegram s'effectuent exclusivement via le protocole chiffré HTTPS/TLS ;</li>
+  <li>Toute commande reçue par le bot est vérifiée par comparaison avec l'identifiant de conversation (chat_id) enregistré ; toute commande émanant d'un identifiant différent est ignorée et n'est pas exécutée ;</li>
+  <li>Le jeton d'authentification du bot n'est ni publié, ni intégré dans un dépôt de code source public ;</li>
+  <li>Le Système n'expose aucun service réseau accessible depuis l'extérieur du réseau domestique local, hormis les connexions sortantes vers l'API Telegram.</li>
+</ul>
+
+<h2>9. Droits des personnes concernées (RGPD)</h2>
+<p>Conformément aux articles 15 à 22 du RGPD, toute personne physique dont des données seraient traitées dans le cadre du fonctionnement du Système dispose, en principe, des droits suivants :</p>
+<ul>
+  <li><strong>Droit d'accès</strong> — obtenir la confirmation qu'une donnée la concernant est traitée, et en obtenir une copie ;</li>
+  <li><strong>Droit de rectification</strong> — faire corriger une donnée inexacte ;</li>
+  <li><strong>Droit à l'effacement</strong> — demander la suppression d'une donnée, notamment une photographie ;</li>
+  <li><strong>Droit à la limitation du traitement</strong> — demander la suspension temporaire d'un traitement ;</li>
+  <li><strong>Droit d'opposition</strong> — s'opposer, pour des motifs légitimes, à un traitement fondé sur l'intérêt légitime du Responsable ;</li>
+  <li><strong>Droit à la portabilité</strong> — recevoir les données dans un format structuré, lorsque cela est techniquement applicable.</li>
+</ul>
+<p>Le Système étant un dispositif à usage strictement personnel et non un service ouvert au public, ces droits s'exercent dans les faits par le Responsable lui-même, seul utilisateur du bot et seule personne dont les données sont traitées de manière régulière. Dans l'hypothèse où une donnée relative à un tiers serait incidemment collectée (par exemple une photographie), ce tiers peut faire valoir ses droits directement auprès du Responsable, qui s'engage à y répondre dans un délai raisonnable et, en tout état de cause, à supprimer sans délai toute image le concernant sur simple demande.</p>
+<p>Toute personne concernée dispose également du droit d'introduire une réclamation auprès de l'autorité de contrôle compétente (en France, la Commission Nationale de l'Informatique et des Libertés — CNIL, <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>).</p>
+
+<h2>10. Cookies et traceurs</h2>
+<p>Le Système ne comporte aucune interface web publique, ne dépose aucun cookie et n'utilise aucun traceur publicitaire ou analytique. Cette politique de confidentialité est publiée sous forme de simple page statique, sans collecte de données de navigation.</p>
+
+<h2>11. Décision automatisée</h2>
+<p>Le Système ne met en œuvre aucune décision entièrement automatisée produisant des effets juridiques ou similaires à l'égard d'une personne. La détection d'intrusion déclenche uniquement une notification et une capture d'image destinées à informer le Responsable, qui reste seul décisionnaire de toute action ultérieure.</p>
+
+<h2>12. Contact</h2>
+<p>Le Système étant exploité à des fins strictement personnelles et n'étant pas mis à disposition de tiers ni destiné à un usage public, aucun canal de contact dédié n'est publié dans le cadre de la présente politique.</p>
+
+<h2>13. Modifications de la présente politique</h2>
+<p>Cette politique de confidentialité peut être mise à jour à tout moment afin de refléter les évolutions techniques du Système (ajout de fonctionnalités, modification des données traitées, etc.). La date de dernière mise à jour figure en haut du présent document.</p>
+
+<footer>
+  Secure Home Agency — Document généré à titre informatif pour un usage personnel. Cette politique ne constitue pas un avis juridique.
+</footer>
+
+</body>
+</html>
