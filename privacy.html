@@ -6,265 +6,273 @@
 <title>Secure Home — Privacy Policy / Politique de Confidentialité</title>
 
 <style>
-:root {
-    --bg:#0a0e1a;
-    --card:#0f1729;
-    --card-border:#1e293b;
-    --text:#e5e7eb;
-    --accent:#38bdf8;
-    --gold:#c9a648;
-    --muted:#8b96a8;
-    --danger:#f87171;
-}
-
 * { box-sizing: border-box; }
 
 body {
     margin:0;
     font-family: 'Georgia', 'Times New Roman', serif;
-    background:
-        radial-gradient(circle at 50% 0%, #10192e 0%, var(--bg) 60%);
-    color:var(--text);
-    line-height:1.7;
+    background:#000000;
+    color:#f2f2f2;
+    line-height:1.8;
 }
 
+.container {
+    max-width:760px;
+    margin:auto;
+    padding:0 24px 80px;
+}
+
+/* ==================== EN-TÊTE ==================== */
 header {
-    padding:60px 20px 40px;
+    padding:70px 20px 50px;
     text-align:center;
-    background: linear-gradient(180deg, #0b1220 0%, #0a0e1a 100%);
-    border-bottom: 1px solid var(--card-border);
-    position: relative;
 }
 
-/* ==================== SCEAU OFFICIEL (SVG) ==================== */
 .seal-wrapper {
     display:flex;
     justify-content:center;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
 }
 
-.seal {
-    width: 150px;
-    height: 150px;
-    filter: drop-shadow(0 0 15px rgba(56,189,248,0.25));
-}
+.seal { width: 140px; height: 140px; }
 
 header h1 {
-    margin:10px 0 4px;
-    font-size:2.1em;
-    letter-spacing: 3px;
+    margin:14px 0 6px;
+    font-size:2em;
+    letter-spacing: 4px;
     text-transform: uppercase;
     font-family: 'Trebuchet MS', Arial, sans-serif;
     font-weight: 700;
-    color: var(--text);
+    color:#ffffff;
 }
 
 header .subtitle {
-    color: var(--gold);
+    color: #aaaaaa;
     letter-spacing: 4px;
-    font-size: 0.75em;
+    font-size: 0.72em;
     text-transform: uppercase;
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 header p.desc {
-    color:var(--muted);
+    color:#cccccc;
     font-family: 'Trebuchet MS', Arial, sans-serif;
     font-size: 0.95em;
 }
 
 .classification-bar {
-    margin: 20px auto 0;
-    max-width: 500px;
-    border: 1px solid var(--gold);
-    color: var(--gold);
+    margin: 26px auto 0;
+    max-width: 460px;
+    border-top: 1px solid #555555;
+    border-bottom: 1px solid #555555;
+    color: #cccccc;
     font-family: 'Trebuchet MS', Arial, sans-serif;
     letter-spacing: 2px;
-    font-size: 0.75em;
-    padding: 6px 12px;
+    font-size: 0.72em;
+    padding: 10px 12px;
     text-transform: uppercase;
 }
 
-.container {
-    max-width:900px;
-    margin:auto;
-    padding:30px 20px 60px;
-}
-
-.card {
-    background:var(--card);
-    border: 1px solid var(--card-border);
-    padding:26px 28px;
-    margin:18px 0;
-    border-radius:6px;
-    box-shadow:0 4px 20px rgba(0,0,0,0.35);
-}
-
-.card h2 {
-    color:var(--accent);
-    margin-top:0;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    font-size: 1.25em;
-    border-bottom: 1px solid var(--card-border);
-    padding-bottom: 10px;
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
-.card h2 .num {
-    color: var(--gold);
-    font-size: 0.8em;
-    border: 1px solid var(--gold);
-    border-radius: 50%;
-    width: 26px;
-    height: 26px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-shrink:0;
-}
-
-.card h3 {
-    color: var(--gold);
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    font-size: 1em;
-    margin-bottom: 6px;
-}
-
-.en {
-    color: var(--muted);
-    font-style: italic;
-    font-size: 0.92em;
-    border-left: 2px solid var(--card-border);
-    padding-left: 14px;
-    margin-top: 6px;
-}
-
-a { color:var(--accent); text-decoration:none; }
-a:hover { text-decoration:underline; }
-
+/* ==================== SOMMAIRE ==================== */
 .toc {
-    background:#0b1220;
-    padding:20px 24px;
-    border-radius:6px;
-    border: 1px solid var(--card-border);
+    margin: 50px 0;
+    text-align:center;
 }
 
-.toc h2 { font-family:'Trebuchet MS', Arial, sans-serif; color: var(--gold); border:none; }
+.toc h2 {
+    font-family:'Trebuchet MS', Arial, sans-serif;
+    color: #ffffff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 1em;
+    border:none;
+    margin-bottom: 20px;
+}
 
 .toc-grid {
     display:grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4px 20px;
+    gap: 8px 30px;
+    text-align:left;
+    max-width: 560px;
+    margin: auto;
 }
 
 .toc a {
     display:block;
-    padding:6px 0;
+    padding:4px 0;
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    font-size: 0.92em;
-    border-bottom: 1px dotted var(--card-border);
+    font-size: 0.85em;
+    color: #cccccc;
+    text-decoration: none;
 }
+.toc a:hover { color:#ffffff; }
+
+/* ==================== ARTICLES (structure linéaire) ==================== */
+.article {
+    margin: 60px 0;
+}
+
+.article h2 {
+    text-align:center;
+    color:#ffffff;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 1.05em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight:700;
+    margin:0 0 6px;
+}
+
+.article h2 .num {
+    display:block;
+    font-size: 0.75em;
+    color:#999999;
+    letter-spacing: 4px;
+    margin-bottom: 4px;
+}
+
+.article .underline {
+    width: 70px;
+    height: 1px;
+    background: #555555;
+    margin: 10px auto 26px;
+}
+
+.article h3 {
+    color: #ffffff;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 0.95em;
+    margin: 22px 0 8px;
+    text-decoration: underline;
+    text-decoration-color: #555555;
+}
+
+.article p { color:#e0e0e0; margin: 12px 0; }
+
+.en {
+    color: #999999;
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 8px;
+}
+
+a { color:#ffffff; text-decoration:underline; }
+a:hover { color:#cccccc; }
 
 table {
     width:100%;
     border-collapse: collapse;
-    margin: 14px 0;
+    margin: 18px 0;
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    font-size: 0.9em;
+    font-size: 0.85em;
 }
 
 th, td {
-    border: 1px solid var(--card-border);
+    border: 1px solid #444444;
     padding: 10px 12px;
     text-align: left;
+    color:#e0e0e0;
 }
 
 th {
-    background: #0b1220;
-    color: var(--gold);
+    background: #111111;
+    color: #ffffff;
+    font-weight:600;
 }
 
-ul, ol { padding-left: 22px; }
-li { margin-bottom: 6px; }
+ul, ol { padding-left: 24px; color:#e0e0e0; }
+li { margin-bottom: 8px; }
 
 .badge {
     display:inline-block;
-    background: rgba(56,189,248,0.12);
-    border: 1px solid var(--accent);
-    color: var(--accent);
+    border: 1px solid #666666;
+    color: #cccccc;
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    font-size: 0.72em;
-    padding: 2px 10px;
-    border-radius: 20px;
-    letter-spacing: 1px;
+    font-size: 0.68em;
+    padding: 3px 12px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
 .warning-box {
-    border: 1px solid var(--danger);
-    background: rgba(248,113,113,0.06);
-    padding: 14px 18px;
-    border-radius: 6px;
-    margin-top: 14px;
+    border-top: 1px solid #555555;
+    border-bottom: 1px solid #555555;
+    padding: 16px 4px;
+    margin-top: 20px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    font-size: 0.9em;
+    font-size: 0.88em;
+    color:#cccccc;
 }
 
-.warning-box strong { color: var(--danger); }
+.warning-box strong { color: #ffffff; }
 
+code {
+    background:#161616;
+    border:1px solid #333333;
+    padding:1px 6px;
+    color:#eeeeee;
+    font-size:0.9em;
+}
+
+/* ==================== PIED DE PAGE ==================== */
 footer {
     text-align:center;
-    padding:40px 20px;
-    color:var(--muted);
-    font-size:0.85em;
+    padding:60px 20px 30px;
+    color:#999999;
+    font-size:0.82em;
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    border-top: 1px solid var(--card-border);
+    border-top: 1px solid #333333;
+    margin-top: 40px;
 }
 
 footer .seal-mini {
-    width: 40px;
-    height: 40px;
-    margin: 0 auto 12px;
-    opacity: 0.5;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 14px;
+}
+
+footer .certified {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    color: #ffffff;
+    margin-bottom: 10px;
 }
 </style>
 </head>
 
 <body>
 
+<div class="container">
+
 <header>
     <div class="seal-wrapper">
-        <!-- Sceau officiel original (SVG maison, style "agence") -->
         <svg class="seal" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="100" cy="100" r="96" fill="none" stroke="#c9a648" stroke-width="2"/>
-            <circle cx="100" cy="100" r="88" fill="none" stroke="#c9a648" stroke-width="1"/>
-            <circle cx="100" cy="100" r="70" fill="#0f1729" stroke="#38bdf8" stroke-width="1"/>
+            <circle cx="100" cy="100" r="96" fill="none" stroke="#f2f2f2" stroke-width="2"/>
+            <circle cx="100" cy="100" r="88" fill="none" stroke="#f2f2f2" stroke-width="1"/>
+            <circle cx="100" cy="100" r="70" fill="#000000" stroke="#f2f2f2" stroke-width="1"/>
 
-            <!-- Texte circulaire haut -->
             <defs>
                 <path id="circleTop" d="M 30,100 A 70,70 0 0 1 170,100" fill="none"/>
                 <path id="circleBottom" d="M 170,100 A 70,70 0 0 1 30,100" fill="none"/>
             </defs>
-            <text font-family="Trebuchet MS, sans-serif" font-size="10" fill="#c9a648" letter-spacing="3">
+            <text font-family="Trebuchet MS, sans-serif" font-size="10" fill="#f2f2f2" letter-spacing="3">
                 <textPath href="#circleTop" startOffset="50%" text-anchor="middle">SECURE HOME AGENCY</textPath>
             </text>
-            <text font-family="Trebuchet MS, sans-serif" font-size="9" fill="#8b96a8" letter-spacing="3">
+            <text font-family="Trebuchet MS, sans-serif" font-size="9" fill="#999999" letter-spacing="3">
                 <textPath href="#circleBottom" startOffset="50%" text-anchor="middle">EST. 2026 — ROUBAIX DIV.</textPath>
             </text>
 
-            <!-- Aigle stylisé (silhouette géométrique originale) -->
-            <g transform="translate(100,102)" fill="#e5e7eb">
-                <path d="M0,-28 L6,-14 L28,-10 L10,-2 L20,14 L4,4 L0,20 L-4,4 L-20,14 L-10,-2 L-28,-10 L-6,-14 Z" fill="#38bdf8" opacity="0.9"/>
-                <path d="M0,-6 C -14,-10 -30,-2 -34,10 C -24,6 -14,6 -8,10 C -6,4 -2,0 0,0 C 2,0 6,4 8,10 C 14,6 24,6 34,10 C 30,-2 14,-10 0,-6 Z" fill="#e5e7eb"/>
-                <circle cx="0" cy="0" r="4" fill="#c9a648"/>
+            <g transform="translate(100,102)" fill="#f2f2f2">
+                <path d="M0,-28 L6,-14 L28,-10 L10,-2 L20,14 L4,4 L0,20 L-4,4 L-20,14 L-10,-2 L-28,-10 L-6,-14 Z" fill="#f2f2f2"/>
+                <path d="M0,-6 C -14,-10 -30,-2 -34,10 C -24,6 -14,6 -8,10 C -6,4 -2,0 0,0 C 2,0 6,4 8,10 C 14,6 24,6 34,10 C 30,-2 14,-10 0,-6 Z" fill="#000000" stroke="#f2f2f2" stroke-width="1"/>
+                <circle cx="0" cy="0" r="4" fill="#f2f2f2"/>
             </g>
 
-            <!-- Étoiles -->
-            <g fill="#c9a648">
+            <g fill="#f2f2f2">
                 <circle cx="100" cy="42" r="1.6"/>
                 <circle cx="130" cy="52" r="1.6"/>
                 <circle cx="70" cy="52" r="1.6"/>
@@ -281,32 +289,31 @@ footer .seal-mini {
     <div class="classification-bar">Document Public — Classification : Non Sensible</div>
 </header>
 
-<div class="container">
-
-<div class="card toc">
-<h2>Sommaire / Table of Contents</h2>
+<div class="toc">
+<h2>Sommaire</h2>
 <div class="toc-grid">
-<a href="#intro">1. Présentation du projet</a>
-<a href="#objet">2. Objet de la politique</a>
-<a href="#definitions">3. Définitions</a>
-<a href="#donnees">4. Données traitées</a>
-<a href="#collecte">5. Modalités de collecte</a>
-<a href="#conservation">6. Durée de conservation</a>
-<a href="#securite">7. Sécurité informatique</a>
-<a href="#cookies">8. Cookies &amp; Traceurs</a>
-<a href="#partage">9. Partage des données</a>
-<a href="#transfert">10. Transferts internationaux</a>
-<a href="#rgpd">11. Base juridique (RGPD)</a>
-<a href="#droits">12. Droits des utilisateurs</a>
-<a href="#mineurs">13. Protection des mineurs</a>
-<a href="#incident">14. Gestion des incidents</a>
-<a href="#modifications">15. Modifications de la politique</a>
-<a href="#contact">16. Contact &amp; DPO</a>
+<a href="#intro">Article 1 — Présentation du projet</a>
+<a href="#objet">Article 2 — Objet de la politique</a>
+<a href="#definitions">Article 3 — Définitions</a>
+<a href="#donnees">Article 4 — Données traitées</a>
+<a href="#collecte">Article 5 — Modalités de collecte</a>
+<a href="#conservation">Article 6 — Durée de conservation</a>
+<a href="#securite">Article 7 — Sécurité informatique</a>
+<a href="#cookies">Article 8 — Cookies &amp; Traceurs</a>
+<a href="#partage">Article 9 — Partage des données</a>
+<a href="#transfert">Article 10 — Transferts internationaux</a>
+<a href="#rgpd">Article 11 — Base juridique (RGPD)</a>
+<a href="#droits">Article 12 — Droits des utilisateurs</a>
+<a href="#mineurs">Article 13 — Protection des mineurs</a>
+<a href="#incident">Article 14 — Gestion des incidents</a>
+<a href="#modifications">Article 15 — Modifications de la politique</a>
+<a href="#contact">Article 16 — Contact &amp; DPO</a>
 </div>
 </div>
 
-<div class="card" id="intro">
-<h2><span class="num">1</span>Présentation du projet</h2>
+<div class="article" id="intro">
+<h2><span class="num">Article 1</span>Présentation du projet</h2>
+<div class="underline"></div>
 <span class="badge">System Overview</span>
 <p>
 Secure Home est un système de domotique et de surveillance personnelle basé sur des microcontrôleurs ESP32 et ESP32-CAM, intégrant des capteurs physiques (détecteur de porte magnétique MC-38, module laser d'alerte KY-008) et un système de notification en temps réel via l'API Telegram Bot.
@@ -319,8 +326,9 @@ Secure Home is a personal home automation and surveillance system built on ESP32
 </p>
 </div>
 
-<div class="card" id="objet">
-<h2><span class="num">2</span>Objet de la politique</h2>
+<div class="article" id="objet">
+<h2><span class="num">Article 2</span>Objet de la politique</h2>
+<div class="underline"></div>
 <p>
 La présente politique de confidentialité a pour objet d'informer les utilisateurs, de manière claire, transparente et loyale, sur la nature des données traitées dans le cadre du fonctionnement du bot Telegram Secure Home, les finalités de ce traitement, les mesures de sécurité mises en œuvre, ainsi que les droits dont ils disposent conformément à la réglementation applicable, notamment le Règlement Général sur la Protection des Données (RGPD — UE 2016/679).
 </p>
@@ -329,8 +337,9 @@ This privacy policy aims to inform users, in a clear, transparent and fair manne
 </p>
 </div>
 
-<div class="card" id="definitions">
-<h2><span class="num">3</span>Définitions</h2>
+<div class="article" id="definitions">
+<h2><span class="num">Article 3</span>Définitions</h2>
+<div class="underline"></div>
 <table>
 <tr><th>Terme</th><th>Définition</th></tr>
 <tr><td>ESP32</td><td>Microcontrôleur Wi-Fi/Bluetooth utilisé comme unité de traitement principale du système d'automatisation.</td></tr>
@@ -342,8 +351,9 @@ This privacy policy aims to inform users, in a clear, transparent and fair manne
 </table>
 </div>
 
-<div class="card" id="donnees">
-<h2><span class="num">4</span>Données traitées</h2>
+<div class="article" id="donnees">
+<h2><span class="num">Article 4</span>Données traitées</h2>
+<div class="underline"></div>
 
 <h3>4.1 — Données collectées</h3>
 <ul>
@@ -373,8 +383,9 @@ All collected data is used exclusively to fulfill the local monitoring and secur
 </p>
 </div>
 
-<div class="card" id="collecte">
-<h2><span class="num">5</span>Modalités de collecte</h2>
+<div class="article" id="collecte">
+<h2><span class="num">Article 5</span>Modalités de collecte</h2>
+<div class="underline"></div>
 <p>
 La collecte des données s'effectue exclusivement de manière automatisée, via les capteurs physiques connectés au microcontrôleur ESP32-CAM. Aucune collecte manuelle, aucun formulaire, aucun tracking comportemental n'est mis en œuvre. Le déclenchement de la capture d'image et de l'envoi de notification est conditionné à l'activation physique du système via l'interrupteur à bascule matériel.
 </p>
@@ -383,8 +394,9 @@ Data collection is performed exclusively through automated means, via the physic
 </p>
 </div>
 
-<div class="card" id="conservation">
-<h2><span class="num">6</span>Durée de conservation</h2>
+<div class="article" id="conservation">
+<h2><span class="num">Article 6</span>Durée de conservation</h2>
+<div class="underline"></div>
 <table>
 <tr><th>Type de donnée</th><th>Durée de conservation</th><th>Localisation</th></tr>
 <tr><td>Images capturées</td><td>Conservées dans l'historique de conversation Telegram, jusqu'à suppression manuelle par l'utilisateur</td><td>Serveurs Telegram</td></tr>
@@ -396,8 +408,9 @@ Le système ne dispose d'aucune base de données distante ni d'aucun stockage cl
 </p>
 </div>
 
-<div class="card" id="securite">
-<h2><span class="num">7</span>Sécurité informatique</h2>
+<div class="article" id="securite">
+<h2><span class="num">Article 7</span>Sécurité informatique</h2>
+<div class="underline"></div>
 <span class="badge">Security Measures</span>
 <ul>
 <li>Chiffrement des communications via HTTPS/TLS pour tous les échanges avec l'API Telegram</li>
@@ -415,8 +428,9 @@ Les images et données transmises ne sont stockées sur aucun serveur externe au
 </div>
 </div>
 
-<div class="card" id="cookies">
-<h2><span class="num">8</span>Cookies &amp; Traceurs</h2>
+<div class="article" id="cookies">
+<h2><span class="num">Article 8</span>Cookies &amp; Traceurs</h2>
+<div class="underline"></div>
 <p>
 Le système Secure Home, fonctionnant exclusivement via microcontrôleur et API Bot Telegram, n'intègre par nature aucun mécanisme de cookie, de traceur publicitaire, de pixel invisible ou de fingerprinting. Cette section est incluse à titre de transparence complète, bien que non applicable techniquement au présent projet.
 </p>
@@ -425,8 +439,9 @@ The Secure Home system, operating exclusively through a microcontroller and the 
 </p>
 </div>
 
-<div class="card" id="partage">
-<h2><span class="num">9</span>Partage des données</h2>
+<div class="article" id="partage">
+<h2><span class="num">Article 9</span>Partage des données</h2>
+<div class="underline"></div>
 <p>
 Aucune donnée collectée par le système n'est vendue, louée, échangée ou communiquée à un tiers à des fins commerciales. Le seul destinataire technique des données est l'infrastructure Telegram, strictement nécessaire à l'acheminement des notifications vers le Chat ID configuré.
 </p>
@@ -435,8 +450,9 @@ Aucune intégration avec des services d'analytics tiers (Google Analytics, Meta 
 </p>
 </div>
 
-<div class="card" id="transfert">
-<h2><span class="num">10</span>Transferts internationaux</h2>
+<div class="article" id="transfert">
+<h2><span class="num">Article 10</span>Transferts internationaux</h2>
+<div class="underline"></div>
 <p>
 Dans la mesure où Telegram opère une infrastructure de serveurs distribuée internationalement, les images et notifications peuvent transiter par des serveurs situés hors de l'Union Européenne. Ce transfert est effectué sous la responsabilité et selon les garanties propres à Telegram Messenger Inc., conformément à sa politique de confidentialité publique.
 </p>
@@ -445,8 +461,9 @@ As Telegram operates an internationally distributed server infrastructure, image
 </p>
 </div>
 
-<div class="card" id="rgpd">
-<h2><span class="num">11</span>Base juridique (RGPD)</h2>
+<div class="article" id="rgpd">
+<h2><span class="num">Article 11</span>Base juridique (RGPD)</h2>
+<div class="underline"></div>
 <p>
 Le traitement des données mis en œuvre par Secure Home repose sur les bases juridiques suivantes, telles que définies par l'article 6 du RGPD :
 </p>
@@ -460,8 +477,9 @@ The data processing implemented by Secure Home relies on the following legal bas
 </p>
 </div>
 
-<div class="card" id="droits">
-<h2><span class="num">12</span>Droits des utilisateurs</h2>
+<div class="article" id="droits">
+<h2><span class="num">Article 12</span>Droits des utilisateurs</h2>
+<div class="underline"></div>
 <p>Conformément aux articles 15 à 22 du RGPD, tout utilisateur dispose des droits suivants :</p>
 <ul>
 <li><b>Droit d'accès</b> — obtenir la confirmation que des données le concernant sont traitées</li>
@@ -476,8 +494,9 @@ The data processing implemented by Secure Home relies on the following legal bas
 </p>
 </div>
 
-<div class="card" id="mineurs">
-<h2><span class="num">13</span>Protection des mineurs</h2>
+<div class="article" id="mineurs">
+<h2><span class="num">Article 13</span>Protection des mineurs</h2>
+<div class="underline"></div>
 <p>
 Ce système n'est pas destiné à collecter ni à traiter sciemment des données concernant des mineurs de manière autonome. Il s'agit d'un dispositif de sécurité domestique installé et administré par un adulte responsable du foyer, à des fins de protection de l'ensemble des occupants du domicile.
 </p>
@@ -486,8 +505,9 @@ This system is not intended to knowingly collect or process data concerning mino
 </p>
 </div>
 
-<div class="card" id="incident">
-<h2><span class="num">14</span>Gestion des incidents</h2>
+<div class="article" id="incident">
+<h2><span class="num">Article 14</span>Gestion des incidents</h2>
+<div class="underline"></div>
 <p>
 En cas de compromission suspectée du token Telegram ou d'accès non autorisé au système, il est recommandé de :
 </p>
@@ -499,8 +519,9 @@ En cas de compromission suspectée du token Telegram ou d'accès non autorisé a
 </ol>
 </div>
 
-<div class="card" id="modifications">
-<h2><span class="num">15</span>Modifications de la politique</h2>
+<div class="article" id="modifications">
+<h2><span class="num">Article 15</span>Modifications de la politique</h2>
+<div class="underline"></div>
 <p>
 La présente politique de confidentialité peut être amenée à évoluer, notamment en cas d'ajout de nouvelles fonctionnalités au système (capteurs supplémentaires, intégrations tierces). Toute modification substantielle sera reflétée par une mise à jour de la date de publication en pied de page du présent document.
 </p>
@@ -509,8 +530,9 @@ This privacy policy may evolve, particularly if new features are added to the sy
 </p>
 </div>
 
-<div class="card" id="contact">
-<h2><span class="num">16</span>Contact &amp; DPO</h2>
+<div class="article" id="contact">
+<h2><span class="num">Article 16</span>Contact &amp; DPO</h2>
+<div class="underline"></div>
 <p>
 Pour toute question relative à la présente politique de confidentialité ou pour exercer l'un des droits mentionnés ci-dessus :
 </p>
@@ -520,8 +542,9 @@ Email de contact : contact@securehome.local
 </p>
 </div>
 
-<div class="card">
+<div class="article">
 <h2>Clause finale</h2>
+<div class="underline"></div>
 <p>
 Ce projet est un système développé à titre personnel et éducatif. Il ne constitue pas un dispositif de sécurité certifié par un organisme officiel et ne saurait garantir une protection absolue contre toute forme d'intrusion, de défaillance technique ou de tentative de compromission.
 </p>
@@ -534,11 +557,13 @@ This project is a system developed for personal and educational purposes. It doe
 
 <footer>
 <svg class="seal-mini" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="100" cy="100" r="96" fill="none" stroke="#c9a648" stroke-width="3"/>
-    <g transform="translate(100,100)" fill="#e5e7eb">
+    <circle cx="100" cy="100" r="96" fill="none" stroke="#f2f2f2" stroke-width="2"/>
+    <circle cx="100" cy="100" r="70" fill="none" stroke="#f2f2f2" stroke-width="1"/>
+    <g transform="translate(100,102)" fill="#f2f2f2">
         <path d="M0,-28 L6,-14 L28,-10 L10,-2 L20,14 L4,4 L0,20 L-4,4 L-20,14 L-10,-2 L-28,-10 L-6,-14 Z"/>
     </g>
 </svg>
+<div class="certified">Document certifié conforme</div>
 Secure Home © 2026 — Tous droits réservés — All rights reserved<br>
 Document mis à jour le 01/07/2026
 </footer>
