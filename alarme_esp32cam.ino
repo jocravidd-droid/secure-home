@@ -17,8 +17,8 @@
 const char* ssid     = "TON_WIFI";
 const char* password = "TON_MOT_DE_PASSE";
 
-const String token   = "8661751530:AAHSG838XznFatBexPCxZi4Q5YzRGQCjCZU";
-const String chat_id = "7343121960";
+const String token   = "TOKEN_BOT ICI";
+const String chat_id = "CHAT_ID ICI";
 
 const char* ntpServer = "pool.ntp.org";
 const long  gmtOffset_sec = 3600;
